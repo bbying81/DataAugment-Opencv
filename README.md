@@ -28,12 +28,21 @@ Combine image crop,color shift,rotation and perspective transform together to co
     - 之所以linux用上述方法安装opencv是因为直接像window那样安装后，在执行cv操作时，遇见了
       ```bash
       error: -------src-dir-------/opencv-2.4.10/modules/highgui/src/window.cpp:501: error: (-2) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Carbon support.  If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function cvShowImage. 
-    ```
+      ```
+    
     - 不要直接conda install opencv3,一定要像上面的命令那样写
 
 ## 数据集
-- 从LFW Face Database 中挑了16张图片
+- 从LFW Face Database中挑了25张图片
 http://vis-www.cs.umass.edu/lfw/
+![avatar](raw.jpg)
+
+## 运行
+run DataAugment-opencv.ipynb
+
+## 结果
+![avatar](./result/merge.gif)
+- samples：增广图片存储目录
 
 ## 参考
 https://zhuanlan.zhihu.com/p/43665254
